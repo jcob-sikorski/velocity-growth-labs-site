@@ -3,47 +3,60 @@ import { PageHero } from "@/components/PageHero";
 import { Manifesto } from "@/components/home/About";
 import { Principles } from "@/components/home/Principles";
 import { Process } from "@/components/home/Process";
+import { Block, BlockHead, Cards, Chains, Prose, Table } from "@/components/sections";
 import { Reveal } from "@/components/Reveal";
 import { CTA } from "@/components/CTA";
-import { Button, Label } from "@/components/ui";
+import { Button } from "@/components/ui";
 import { site } from "@/lib/content";
+import { approach as p } from "@/lib/pages";
 
-export const metadata: Metadata = { title: "Approach" };
-
-const different = [
-  { t: "We stay after launch.", b: "Launching is the easy part. We’re built to operate — so the system keeps working when the launch buzz fades." },
-  { t: "Senior people only.", b: "The people on your first call are the people doing the work. No hand-offs to juniors." },
-  { t: "One offer at a time.", b: "Focus is a strategy. We make one offer great before we let anyone add a second." },
-  { t: "Numbers every week.", b: "You’ll always know what’s working, what isn’t and what we’re changing next." },
-];
+export const metadata: Metadata = {
+  title: "Approach",
+  description: "How we build and run paid acquisition for high-ticket offers: one pipeline, a target for every stage, fix the earliest break.",
+};
 
 export default function Page() {
   return (
     <>
-      <PageHero
-        label="Approach"
-        title="Less, done"
-        accent="properly."
-        intro="We don’t sell tools, hacks or theatre. We launch and operate high-ticket offers with a small number of simple systems — and the discipline to run them."
-      >
+      <PageHero {...p.hero}>
         <Button href={site.bookUrl}>Book a call</Button>
+        <Button href="#numbers" variant="ghost">
+          See the numbers
+        </Button>
       </PageHero>
       <Manifesto />
       <Principles />
-      <section className="bg-ivory text-ink">
-        <div className="container-page py-28 md:py-40">
-          <Label index="03" dark>How we’re different</Label>
-          <div className="mt-16 grid gap-x-10 md:grid-cols-2">
-            {different.map((d, i) => (
-              <Reveal key={d.t} delay={i * 80} className="border-t border-ink/10 py-10">
-                <h3 className="display text-4xl md:text-5xl">{d.t}</h3>
-                <p className="mt-5 max-w-md leading-relaxed text-stone">{d.b}</p>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-      <Process index="04" />
+
+      <Block tone="deep">
+        <BlockHead index="03" head={p.whole.head} />
+        <Prose statement={p.whole.statement} paragraphs={p.whole.paragraphs} />
+      </Block>
+
+      <Block id="numbers">
+        <BlockHead index="04" head={p.numbers.head} />
+        <Chains chains={p.numbers.chains} />
+        <p className="label mt-8 leading-relaxed text-faint">{p.numbers.note}</p>
+      </Block>
+
+      <Block tone="light">
+        <BlockHead index="05" head={p.decide.head} tone="light" />
+        <Table columns={p.decide.columns} rows={p.decide.rows} tone="light" />
+        <Reveal>
+          <p className="mt-10 max-w-2xl border-l border-ink/30 pl-5 text-[15px] leading-relaxed text-stone">{p.decide.note}</p>
+        </Reveal>
+      </Block>
+
+      <Block tone="deep">
+        <BlockHead index="06" head={p.constraint.head} />
+        <Table columns={p.constraint.columns} rows={p.constraint.rows} highlight={2} />
+      </Block>
+
+      <Block tone="light">
+        <BlockHead index="07" head={p.different.head} tone="light" />
+        <Cards items={p.different.cards} tone="light" />
+      </Block>
+
+      <Process index="08" />
       <CTA />
     </>
   );

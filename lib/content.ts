@@ -7,9 +7,9 @@
 
 export const site = {
   name: "jaxescales",
-  tagline: "We launch and operate high-ticket offers.",
+  tagline: "We build and run paid acquisition for high-ticket offers.",
   description:
-    "We launch and operate high-ticket offers, using VSL and webinar systems to attract premium, qualified buyers. Boring systems, creativity, information and simplicity.",
+    "We build and run the full paid acquisition system for offers priced $3,000+: offer and messaging, VSL or webinar funnel, ads, retargeting content, setting, a recruited sales team and ad-to-cash tracking. Live in 14 days.",
   bookUrl: "/book",
   email: "hello@jaxescales.com",
 };
@@ -24,24 +24,26 @@ export const nav = [
 /* ── Home ─────────────────────────────────────────────────── */
 
 export const hero = {
-  eyebrow: "Acquisition systems for high‑ticket offers",
+  eyebrow: "For offers priced $3,000+ per client",
   line1: "Systems that scale",
   line2: "premium offers.",
-  sub: "We build and operate the VSL and webinar systems behind high-ticket offers — attracting premium buyers, raising the value of every client and scaling revenue without the chaos. Live in two weeks.",
+  sub: "We build and run the whole system that turns cold traffic into qualified sales calls and closed clients: the offer, the VSL or webinar, the ads, the content, the setters and closers, and the tracking that ties every dollar of spend to cash collected. Live in 14 days.",
   primary: "Book a call",
   secondary: "See the systems",
 };
 
 export const marquee = [
-  "Offer architecture",
-  "Positioning",
+  "Offer & pricing",
+  "Premium messaging",
   "VSL funnels",
-  "Webinar systems",
-  "Paid acquisition",
-  "Sales systems",
-  "Follow-up",
-  "Delivery ops",
-  "Weekly reporting",
+  "Weekly & Monthly webinars",
+  "Paid ads",
+  "Creative testing",
+  "Retargeting content",
+  "DM setting",
+  "Setter & closer hiring",
+  "Sales scripts",
+  "Ad-to-cash tracking",
 ];
 
 export const manifesto = {
@@ -90,29 +92,67 @@ export const systems = {
   items: [
     {
       kicker: "System 01",
-      name: "VSL system",
-      tagline: "One video. Sells around the clock.",
-      body: "A scripted, produced video sales letter that explains the problem, earns belief and makes the case — then routes qualified viewers straight to a sales call.",
-      flow: ["Paid traffic", "VSL page", "Application", "Sales call"],
-      points: ["Script & story architecture", "Production direction", "Qualification application", "Retargeting & nurture"],
+      meta: "Foundation",
+      name: "Offer & message",
+      tagline: "The offer premium buyers say yes to.",
+      body: "We define who the offer is for, the outcome it promises, the price, the mechanism and the proof. Then we write the message that qualifies on sight: the buyer’s problem in their own words, and clear reasons for the wrong buyer to opt out before they cost you a call.",
+      flow: ["Market", "Buyer", "Offer", "Message"],
+      points: ["Ideal buyer & buying triggers", "Offer, price & guarantee", "Unique mechanism", "Angle & hook bank for ads"],
     },
     {
       kicker: "System 02",
+      meta: "Evergreen",
+      name: "VSL call funnel",
+      tagline: "One video that qualifies and pre-sells, 24/7.",
+      body: "Direct-response ads send cold traffic to one page: headline, VSL, application and calendar on the same step, so applicants don’t drop between the form and the booking. Qualified applicants book. Unqualified ones are routed out before they reach your calendar. Your ad account is fed qualified-call events, so it optimises for buyers, not clicks.",
+      flow: ["Ads", "VSL page", "Application", "Booked call"],
+      points: ["VSL script with chapters", "One-question application", "Qualified / unqualified routing", "Qualified-call events sent to ads"],
+    },
+    {
+      kicker: "System 03",
+      meta: "Live · monthly",
       name: "Webinar system",
-      tagline: "Teach once. Sell to the room.",
-      body: "A live or evergreen webinar that delivers real value, builds authority at scale and converts the right attendees into booked calls or direct enrolments.",
-      flow: ["Paid traffic", "Registration", "Webinar", "Sales call"],
-      points: ["Webinar structure & slides", "Show-up sequences", "Live or evergreen delivery", "Post-event follow-up"],
+      tagline: "Teach once a week / month. Sell to the room.",
+      body: "A live monthly webinar, promoted with paid traffic for 14 days. Registrants are scored on sign-up, and the highest-intent get the earliest call slots. The presentation teaches, then pitches a call. A replay, a pop-up session and a final re-pitch catch the buyers who needed another day.",
+      flow: ["Ads", "Registration", "Live webinar", "Booked call"],
+      points: ["Presentation & pitch script", "Lead scoring & tiered calendars", "Show-up sequences", "Replay, pop-up & re-pitch"],
+    },
+    {
+      kicker: "System 04",
+      meta: "Always-on",
+      name: "Retargeting content",
+      tagline: "Content that makes the call a formality.",
+      body: "We turn the founder’s expertise into short- and long-form content and run it as ads to everyone who has watched, applied or booked. By the time a prospect speaks to sales, they’ve seen your thinking many times over, and the call starts with trust instead of scepticism.",
+      flow: ["Founder", "Content", "Retargeting", "Call"],
+      points: ["Short- & long-form content library", "Retargeting to warm audiences", "Pre-call breakout videos", "Proof & case-study assets"],
+    },
+    {
+      kicker: "System 05",
+      meta: "Human layer",
+      name: "Setting & sales",
+      tagline: "Booked calls, turned into cash.",
+      body: "Setters work every inbound DM and application: qualify, confirm and run the pre-call sequence so buyers turn up. Closers run a documented call structure. We recruit, onboard and manage both, so revenue isn’t capped by how many calls the founder can take.",
+      flow: ["Lead", "Setter", "Closer", "Cash"],
+      points: ["Setter & closer recruitment", "DM setting & qualification", "Pre-call nurture sequence", "Scripts, call reviews & no-show recovery"],
+    },
+    {
+      kicker: "System 06",
+      meta: "Visibility",
+      name: "Tracking",
+      tagline: "Every dollar of spend traced to cash.",
+      body: "One view of ad spend, cost per booked call, show rate, close rate and cash collected per call, broken down by campaign, by creative and by rep. Every week starts with the same question: where does the funnel break first? That’s what we fix next.",
+      flow: ["Spend", "Calls", "Closes", "Cash"],
+      points: ["CRM & pipeline stages", "Ad-to-cash attribution", "Rep-level scorecards", "Weekly constraint review"],
     },
   ],
 };
 
 export const engagements = {
   label: "How we work",
-  title: "We launch it.",
-  accent: "Then we run it.",
+  title: "One system.",
+  accent: "Two ways in.",
   intro:
-    "Most agencies disappear after launch day. The real work is what comes after — so we stay.",
+    "Launch builds the six systems and takes them live in 14 days. Operate is our team running them every week after: ads, funnel, content, setting, sales management and reporting.",
   items: [
     {
       slug: "launch",
@@ -120,13 +160,13 @@ export const engagements = {
       range: "0 → 1",
       name: "Launch",
       tagline: "From idea to live offer in two weeks.",
-      body: "We shape the offer, price it, position it and build the path from first click to closed deal. You walk away with a proven offer and a system that runs.",
+      body: "For new, relaunched or stalled offers. We build the offer, the VSL or webinar funnel, the ads, the sales process and the tracking, then switch traffic on. You leave with a documented, working system, or roll straight into Operate.",
       points: [
-        "Offer & pricing architecture",
-        "Positioning and messaging",
-        "VSL or webinar funnel build",
-        "Sales process and scripts",
-        "First-cohort launch",
+        "Offer, pricing & premium messaging",
+        "VSL or webinar funnel, built & tracked",
+        "Ad creative & campaign launch",
+        "Setting & sales scripts",
+        "Dashboard, SOPs & handover",
       ],
       meta: "Live in 14 days",
     },
@@ -135,14 +175,14 @@ export const engagements = {
       index: "02",
       range: "1 → n",
       name: "Operate",
-      tagline: "A senior team running the whole engine, every week.",
+      tagline: "We build it and run it. You keep the vision.",
       body: "We take ownership of acquisition, sales operations and reporting — and keep refining until growth is predictable. You keep the vision. We keep it moving.",
       points: [
-        "VSL & webinar acquisition at scale",
-        "Sales ops, CRM and follow-up",
-        "Weekly performance reviews",
-        "Delivery & retention systems",
-        "Direct partner access",
+        "Paid media & creative testing",
+        "VSL optimisation & monthly webinars",
+        "Retargeting content production",
+        "Setter & closer recruitment and management",
+        "Weekly scorecard review with Jakub",
       ],
       meta: "Ongoing · two-week sprints",
     },
@@ -157,17 +197,17 @@ export const process = {
     {
       name: "Diagnose",
       when: "Days 1–2",
-      body: "We audit the offer, the numbers and the bottlenecks. Most problems are obvious once someone honest looks.",
+      body: "We pull your offer, price, cost per call, show rate, close rate and cash per call, and find the first stage where the funnel breaks.",
     },
     {
       name: "Design",
       when: "Days 3–5",
-      body: "We decide what to build — and, more importantly, what not to. One offer, one path, one scorecard.",
+      body: "We choose VSL or webinar, write the offer and message, and set a target for every stage on one scorecard. One offer, one path.",
     },
     {
       name: "Launch",
       when: "Days 6–14",
-      body: "The VSL or webinar, the campaigns, the sales process and the follow-up go live. Every number is watched daily.",
+      body: "Pages, application, ads, sequences and tracking go live. Setters and closers are briefed. Every number is watched daily.",
     },
     {
       name: "Operate",
@@ -177,8 +217,46 @@ export const process = {
   ],
 };
 
+// Operating targets — sourced from Jeremy Haynes’ published VSL and webinar
+// figures. Shown as targets, not promises. VSL and webinar kept separate.
+export const benchmarks = {
+  label: "Operating targets",
+  title: "Two front ends.",
+  accent: "Two sets of numbers.",
+  intro:
+    "A VSL and a webinar convert differently, so we never manage them against the same targets. These are the numbers each system is built and run to hit.",
+  groups: [
+    {
+      name: "VSL call funnel",
+      meta: "Evergreen · calls every day",
+      items: [
+        { value: "3–6%", label: "Page visitors who book a call" },
+        { value: "≤ 1", label: "Qualifying question before the calendar" },
+        { value: "15+", label: "Retargeting touches between booking and call" },
+        { value: "70%+", label: "Booked-call show rate" },
+        { value: "20–40%", label: "Close rate on calls held" },
+        { value: "3–5×", label: "Return on ad spend" },
+      ],
+    },
+    {
+      name: "Webinar system",
+      meta: "Live · once a month",
+      items: [
+        { value: "3–14 days", label: "Paid promotion before each live event" },
+        { value: "30%+", label: "Registrants who attend live" },
+        { value: "10–15%", label: "Live attendees who book a call" },
+        { value: "60–80%", label: "Booked-call show rate" },
+        { value: "20–40%", label: "Close rate on calls held" },
+        { value: "4–6×", label: "Return on ad spend" },
+      ],
+    },
+  ],
+  note: "Targets are operating benchmarks from best-in-class VSL and webinar funnels, not guaranteed outcomes.",
+};
+
 // PLACEHOLDER figures — replace with verified numbers.
 export const numbers = {
+  label: "",
   items: [
     { value: "$100K+", label: "Revenue generated for clients" },
     { value: "1", label: "High-ticket offers launched" },
@@ -193,14 +271,14 @@ export const fit = {
   title: "Built for people who already know",
   accent: "it can be bigger.",
   yes: [
-    "You sell expertise worth $3,000+ per client",
-    "You have proof it works — you just can’t scale it cleanly",
-    "You’d rather do one thing properly than ten things badly",
+    "You sell an offer worth $3,000+ per client",
+    "You’ve already closed clients and have results to show",
+    "You’re ready to put real budget behind paid traffic",
     "You make decisions quickly and stick to them",
   ],
   no: [
     "You’re looking for a hack or a shortcut",
-    "You want another tool, not a system",
+    "You want one piece, like ads only, not the system",
     "You haven’t sold the offer to anyone yet",
     "You need it all to happen this week",
   ],
@@ -227,23 +305,31 @@ export const faq = {
   items: [
     {
       q: "What counts as a high-ticket offer?",
-      a: "Anything where a single client is worth enough to justify a real sales conversation — typically $3,000 and up. Coaching, consulting, services, programmes and productised expertise.",
+      a: "Anything where one client is worth enough to justify a sales call: typically $3,000 and up. Coaching, consulting, services, programmes and productised expertise.",
     },
     {
-      q: "VSL or webinar — which is right for us?",
-      a: "It depends on the offer, the price point and how much education the buyer needs. We decide during the diagnosis, based on your numbers — and some offers run both.",
+      q: "What exactly do you build?",
+      a: "Six connected systems: offer and message, a VSL call funnel, a webinar system, retargeting content, setting and sales, and tracking. Most offers run one front end (VSL or webinar); some run both.",
     },
     {
-      q: "Do you only work on new offers?",
-      a: "No. Launch is for new or relaunched offers. Operate is for offers that already sell and need a senior team to run and scale them.",
+      q: "VSL or webinar: which is right for us?",
+      a: "It depends on price point, audience and how much education the buyer needs. A VSL runs evergreen and produces calls every day. A monthly webinar concentrates demand into one event and suits offers that need more teaching. We recommend one in the diagnosis; you approve before we build.",
+    },
+    {
+      q: "Do you run the ads?",
+      a: "Yes. Creative, campaign structure, budgets and testing. The ad account is optimised on qualified booked calls, not leads, so spend goes towards buyers.",
+    },
+    {
+      q: "Do you hire our sales team?",
+      a: "Yes. We recruit, onboard and manage setters and closers, and give them the scripts, pre-call sequences and call reviews to perform. The team works for your business, not ours.",
     },
     {
       q: "How quickly will we see results?",
-      a: "Launches go live within 14 days of kickoff. You’ll get an honest estimate of first sales after the diagnosis — before you commit to anything.",
+      a: "Launches go live within 14 days of kickoff. After the diagnosis you get an honest estimate of cost per call and first sales, before you commit to anything.",
     },
     {
       q: "What do you need from us?",
-      a: "A decision-maker, access to your numbers and around two hours a week. We handle the rest.",
+      a: "A decision-maker, access to your numbers, an ad budget and around two hours a week. Operate clients also record content for the retargeting system. We handle the rest.",
     },
     {
       q: "Do you take on everyone?",
@@ -256,7 +342,7 @@ export const cta = {
   label: "Your move",
   title: "Think",
   accent: "bigger.",
-  body: "Book a 30-minute call. We’ll look at your offer, your numbers and your next move — and tell you exactly what we’d do.",
+  body: "Book a 30-minute call. We’ll look at your cost per call, show rate and close rate, find the first stage that’s breaking, and tell you whether Launch, Operate or neither is the right move.",
   button: "Book a call",
 };
 

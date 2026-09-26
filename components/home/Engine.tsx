@@ -2,7 +2,7 @@ import { systems } from "@/lib/content";
 import { Reveal } from "../Reveal";
 import { Label, Title } from "../ui";
 
-/** The acquisition engine — VSL and webinar systems. */
+/** The acquisition system — six connected systems. */
 export function Systems() {
   return (
     <section id="systems" className="relative scroll-mt-20 overflow-hidden bg-ink-2 text-fg">
@@ -34,7 +34,7 @@ export function Systems() {
               <span className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-champagne/50 to-transparent opacity-0 transition-opacity duration-700 group-hover:opacity-100" />
               <div className="flex items-center justify-between">
                 <span className="label text-champagne">{s.kicker}</span>
-                <span className="label text-faint">{i === 0 ? "Evergreen" : "Live / evergreen"}</span>
+                <span className="label text-faint">{s.meta}</span>
               </div>
 
               <h3 className="display mt-10 text-5xl md:text-6xl">{s.name}</h3>

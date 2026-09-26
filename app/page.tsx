@@ -4,11 +4,11 @@ import { Principles } from "@/components/home/Principles";
 import { Systems } from "@/components/home/Engine";
 import { Engagements } from "@/components/home/Tiers";
 import { Process } from "@/components/home/Process";
-import { Numbers } from "@/components/home/Numbers";
 import { Fit } from "@/components/home/Fit";
 import { Proof } from "@/components/home/Results";
 import { FAQ } from "@/components/home/FAQ";
 import { CTA } from "@/components/CTA";
+import { Benchmarks } from "@/components/Benchmarks";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
       <Systems />
       <Engagements />
       <Process />
-      <Numbers />
+      <Benchmarks />
       <Fit />
       <Proof />
       <FAQ />
