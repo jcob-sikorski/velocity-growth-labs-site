@@ -27,7 +27,7 @@ export const hero = {
   eyebrow: "For offers priced $3,000+ per client",
   line1: "Systems that scale",
   line2: "premium offers.",
-  sub: "We build and run the whole system that turns cold traffic into qualified sales calls and closed clients: the offer, the VSL or webinar, the ads, the content, the setters and closers, and the tracking that ties every dollar of spend to cash collected. Live in 14 days.",
+  sub: "We build and operate the VSL and webinar systems behind high-ticket offers — attracting premium buyers, raising the value of every client and scaling revenue without the chaos. Live in two weeks.",
   primary: "Book a call",
   secondary: "See the systems",
 };
