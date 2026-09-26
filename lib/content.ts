@@ -24,12 +24,12 @@ export const nav = [
 /* ── Home ─────────────────────────────────────────────────── */
 
 export const hero = {
-  eyebrow: "High-ticket offers — launched & operated",
-  line1: "Think bigger.",
-  line2: "Build simpler.",
-  sub: "We launch and operate high-ticket offers — with VSL and webinar systems that attract premium, qualified buyers. One offer. One system. Live in two weeks.",
+  eyebrow: "Acquisition systems for high‑ticket offers",
+  line1: "Systems that scale",
+  line2: "premium offers.",
+  sub: "We build and operate the VSL and webinar systems behind high-ticket offers — attracting premium buyers, raising the value of every client and scaling revenue without the chaos. Live in two weeks.",
   primary: "Book a call",
-  secondary: "Read the manifesto",
+  secondary: "See the systems",
 };
 
 export const marquee = [

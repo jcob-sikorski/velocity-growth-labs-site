@@ -5,7 +5,7 @@ import { Label, Title } from "../ui";
 /** The acquisition engine — VSL and webinar systems. */
 export function Systems() {
   return (
-    <section className="relative overflow-hidden bg-ink-2 text-fg">
+    <section id="systems" className="relative scroll-mt-20 overflow-hidden bg-ink-2 text-fg">
       <div
         aria-hidden
         className="pointer-events-none absolute left-1/2 top-0 h-[520px] w-[1100px] -translate-x-1/2 bg-[radial-gradient(closest-side,rgba(58,85,255,0.12),transparent)]"

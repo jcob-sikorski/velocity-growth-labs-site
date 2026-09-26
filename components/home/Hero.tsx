@@ -23,7 +23,7 @@ export function Hero() {
 
         <h1 className="display mt-10 text-[clamp(3.5rem,11vw,10.5rem)]">
           <span className="text-metal block animate-rise [animation-delay:120ms]">{hero.line1}</span>
-          <em className="text-champagne-metal block animate-rise pr-[0.08em] italic [animation-delay:260ms]">
+          <em className="text-champagne-metal -mb-[0.14em] block animate-rise pb-[0.14em] pr-[0.08em] italic [animation-delay:260ms]">
             {hero.line2}
           </em>
         </h1>
@@ -34,7 +34,7 @@ export function Hero() {
 
         <div className="mt-12 flex animate-rise flex-wrap items-center justify-center gap-3 [animation-delay:560ms]">
           <Button href={site.bookUrl}>{hero.primary}</Button>
-          <Button href="#manifesto" variant="ghost">
+          <Button href="#systems" variant="ghost">
             {hero.secondary}
           </Button>
         </div>
