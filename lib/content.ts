@@ -349,6 +349,13 @@ export const cta = {
 /* ── Footer ───────────────────────────────────────────────── */
 
 export const footer = {
+  // Legal entity behind the brand (Delaware Division of Corporations)
+  company: {
+    legalName: "TASKLEAP LLC",
+    entity: "a Delaware limited liability company",
+    fileNumber: "10086923",
+    registeredAddress: "8 The Green, STE B, Dover, DE 19901, USA",
+  },
   columns: [
     {
       title: "Engagements",

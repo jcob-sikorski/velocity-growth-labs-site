@@ -33,8 +33,14 @@ export function Footer() {
       </div>
 
       <div className="container-page flex flex-col items-start justify-between gap-6 border-t border-white/[0.06] py-8 md:flex-row md:items-center">
-        <div className="label text-faint">
-          © {new Date().getFullYear()} {site.name}. All rights reserved.
+        <div className="space-y-2">
+          <div className="label text-faint">
+            © {new Date().getFullYear()} {footer.company.legalName}. All rights reserved.
+          </div>
+          <p className="max-w-xl text-[13px] leading-relaxed text-faint">
+            {site.name} is operated by {footer.company.legalName}, {footer.company.entity} (File No.{" "}
+            {footer.company.fileNumber}). Registered office: {footer.company.registeredAddress}.
+          </p>
         </div>
         <div className="flex flex-wrap gap-6">
           {footer.socials.map((s) => (
